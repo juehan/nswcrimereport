@@ -11,7 +11,7 @@ def main():
       print "crime[" + str(x) +"] : ", str(crime[x])
     print "----------------------------------------------------------"
     
-  getHeader = html.getHeader()
+  header = html.getHeader()
   
   gmap = CrimeGMaps(crimeList)
   
@@ -21,9 +21,9 @@ def main():
   infoWindow = gmap.infoWindowStr()
   body = option + latlng + places + infoWindow
     
-  footer = html.footer()
+  footer = html.getFooter()
 
-  html.makeHTML(getHeader, body, footer)
+  html.makeHTML(header, body, footer)
   print "NSW crime news page updated"
 
 if __name__ == '__main__':
