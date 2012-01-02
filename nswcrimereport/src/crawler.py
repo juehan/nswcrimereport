@@ -4,7 +4,6 @@ import urllib2
 from BeautifulSoup import BeautifulSoup
 from geopy import geocoders
 import time
-#import logging
 
 def HasDash(mystr):
   location = mystr.find('-')
@@ -36,28 +35,6 @@ def AnalyzeTitle(title):
   else:
     return ("", "")
 
-#def GetLatLngList(location):
-#  LatLng = []
-#  #g = geocoders.Google()
-#  g = geocoders.Google(resource = 'maps')
-#  try:
-#    place, (lat, lng) = g.geocode(location)
-#    time.sleep(0.1)
-#    LatLng.append("%.5f" % lat)
-#    LatLng.append("%.5f" % lng)
-#  except Exception as e:
-#    log = open('logfile.txt', 'a')
-#    s = 'location: {0}, Exception: {1}'.format(location, e)
-#    log.write('%s\n' %s)
-#    log.close()
-#    
-#    place.next()
-#    time.sleep(0.1)
-#    LatLng.append("%.5f" % lat)
-#    LatLng.append("%.5f" % lng)
-#    
-#  return LatLng
-#  
   
 def GetLatLngList(location):
   LatLng = []
