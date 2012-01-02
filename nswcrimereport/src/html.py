@@ -18,7 +18,7 @@ def getHeader():
   return HEADER
 
 
-def footer():
+def getFooter():
   return FOOTER
 
 
