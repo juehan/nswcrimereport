@@ -46,23 +46,28 @@ def GetLatLngList(location):
     LatLng.append("%.5f" % lat)
     LatLng.append("%.5f" % lng)
   except Exception as e:
-    x = "Didn't find exactly one placemark!"
-    if str(e).find(x) >= 0:
-      places, (lat, lng) = g.geocode(location, exactly_one=False)
-      time.sleep(0.1)
-      LatLng.append("%.5f" % places[1][0])
-      LatLng.append("%.5f" % places[1][1])
-      log = open('logfile.txt', 'a')
-      s = 'location: {0}, Exception: {1}'.format(location, e)
-      log.write('%s\n' %s)
-      log.close()
-    else:
-      log = open('logfile.txt', 'a')
-      s = 'location: {0}, Exception: {1}'.format(location, e)
-      log.write('%s\n' %s)
-      log.close()
+#    x = "Didn't find exactly one placemark!"
+#    if str(e).find(x) >= 0:
+#      places, (lat, lng) = g.geocode(location, exactly_one=False)
+#      #places = g.geocode(location, exactly_one=False)
+#      time.sleep(0.1)
+#      LatLng.append("%.5f" % places[1][0])
+#      LatLng.append("%.5f" % places[1][1])
+#      log = open('logfile.txt', 'a')
+#      s = 'location: {0}, Exception: {1}'.format(location, e)
+#      log.write('%s\n' %s)
+#      log.close()
+#    else:
+#      log = open('logfile.txt', 'a')
+#      s = 'location: {0}, Exception: {1}'.format(location, e)
+#      log.write('%s\n' %s)
+#      log.close()
   
-    pass
+    log = open('logfile.txt', 'a')
+    s = 'location: {0}, Exception: {1}'.format(location, e)
+    log.write('%s\n' %s)
+    log.close()
+
   return LatLng
   
 
