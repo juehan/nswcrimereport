@@ -1,3 +1,5 @@
+#!/usr/bin/eval PYTHONPATH=/home/nswcrime/modules python
+
 import sys
 import html
 from crawler import GenerateNewsList
