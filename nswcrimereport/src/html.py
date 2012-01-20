@@ -12,6 +12,7 @@ HEADER = '<!DOCTYPE html><html><head>\n\
 
 FOOTER = '<body onload=\"initialize()\">\n\
             <div id=\"map_canvas\" style=\"width:100%; height:100%\"></div>\n\
+            <br>Data will be Updated every hour\n\
           </body></html>'
 
 def getHeader():
