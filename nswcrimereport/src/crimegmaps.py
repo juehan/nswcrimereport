@@ -27,7 +27,7 @@ class CrimeGMaps:
                                   \'<h4>\'+ crimes[i][1] +\'</h4>\'+\n\
                                   \'<p>\'+ crimes[i][0]+\'</p>\'+\n\
                                   \'<p><i>\'+ crimes[i][3]+\'</i></p>\'+\n\
-                                  \'<p><a href=\'+crimes[i][2]+\'>See more details</a></p>\'+\n\
+                                   \'<p><a href=\'+crimes[i][2]+\' target=\"_blank\">See more details</a></p>\'+\n\
                                   \'</div>\';\n\
                     infoWindow.setContent(content);\n\
                     infoWindow.open(map, marker);\n\
