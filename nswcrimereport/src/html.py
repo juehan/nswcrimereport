@@ -2,7 +2,7 @@ HEADER = '<!DOCTYPE html><html><head>\n\
           <meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no\" />\n\
           <style type=\"text/css\">\n\
             html { height: 100% }\n\
-            body { height: 100%; margin: 0; padding: 0 }\n\
+            body { height: 90%; margin: 5; padding: 5 }\n\
             #map_canvas { height: 100% }\n\
           </style>\n\
           <script type=\"text/javascript\"\n\
@@ -22,7 +22,7 @@ def getFooter():
   return FOOTER
 
 
-def makeHTML(getHeader, body, footer):
+def makeHTML(header, body, footer):
   f = open("crimenews.html", "w")
-  f.write(getHeader+body+footer)
+  f.write(header+body+footer)
   
