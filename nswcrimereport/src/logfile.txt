@@ -1,0 +1,14 @@
+location: Western Sydney, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 9.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Orange, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Wollongong, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
