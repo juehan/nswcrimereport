@@ -1,4 +1,6 @@
-HEADER = '<!DOCTYPE html><html><head>\n\
+import nswtime
+
+HEADER = '<!DOCTYPE html><html><head><title>NSW Crime Report</title>\n\
           <meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no\" />\n\
           <style type=\"text/css\">\n\
             html { height: 100% }\n\
@@ -10,10 +12,15 @@ HEADER = '<!DOCTYPE html><html><head>\n\
           </script>\n\
           <script type=\"text/javascript\">\n' 
 
+TIME = nswtime.getTime()
+
 FOOTER = '<body onload=\"initialize()\">\n\
             <div id=\"map_canvas\" style=\"width:100%; height:100%\"></div>\n\
-            <br>Data will be Updated every hour\n\
+            <br>Refer to <a href="readme.htm">README</a> page for some details of this app.\n\
+	    <br>Last updated: '+TIME+' (UTC/GMT+10 hours, EDT, Sydney/Australia)\n\
           </body></html>'
+
+
 
 def getHeader():
   return HEADER
