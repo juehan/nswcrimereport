@@ -2,7 +2,7 @@
           <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
           <style type="text/css">
             html { height: 100% }
-            body { height: 100%; margin: 0; padding: 0 }
+            body { height: 90%; margin: 5; padding: 5 }
             #map_canvas { height: 100% }
           </style>
           <script type="text/javascript"
@@ -18,90 +18,130 @@ function initialize() {
           };
           var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
           var places = [];
-places.push(new google.maps.LatLng(-29.46435, 149.84151))
-places.push(new google.maps.LatLng(-33.81458, 151.05495))
-places.push(new google.maps.LatLng(-29.77628, 151.11344))
-places.push(new google.maps.LatLng(-33.88690, 151.17664))
-places.push(new google.maps.LatLng(-33.89084, 151.27429))
-places.push(new google.maps.LatLng(-33.89084, 151.27429))
-places.push(new google.maps.LatLng(-32.97353, 151.64381))
-places.push(new google.maps.LatLng(-33.85249, 151.19677))
-places.push(new google.maps.LatLng(-33.80886, 151.18480))
-places.push(new google.maps.LatLng(-28.64416, 153.61238))
-places.push(new google.maps.LatLng(-33.44449, 151.44373))
-places.push(new google.maps.LatLng(-32.37692, 152.50401))
-places.push(new google.maps.LatLng(-33.89065, 151.21293))
+places.push(new google.maps.LatLng(-32.57365, 151.18287))
+places.push(new google.maps.LatLng(-31.25322, 146.92110))
+places.push(new google.maps.LatLng(-33.86434, 151.02283))
+places.push(new google.maps.LatLng(-31.45737, 152.73257))
+places.push(new google.maps.LatLng(-34.28730, 146.04584))
 places.push(new google.maps.LatLng(-33.88308, 151.00127))
-places.push(new google.maps.LatLng(-33.86955, 151.19454))
-places.push(new google.maps.LatLng(-33.88690, 151.17664))
-var crimes = new Array(16)
-                 for(var i = 0; i <16;i++){
+places.push(new google.maps.LatLng(-29.05412, 152.01903))
+places.push(new google.maps.LatLng(-33.83863, 151.20711))
+places.push(new google.maps.LatLng(-33.87221, 150.88991))
+places.push(new google.maps.LatLng(-33.86469, 151.04363))
+places.push(new google.maps.LatLng(-31.45737, 152.73257))
+places.push(new google.maps.LatLng(-35.63799, 145.57994))
+places.push(new google.maps.LatLng(-33.65065, 150.44283))
+places.push(new google.maps.LatLng(-31.25322, 146.92110))
+places.push(new google.maps.LatLng(-33.87196, 151.20162))
+places.push(new google.maps.LatLng(-33.73713, 150.79787))
+places.push(new google.maps.LatLng(-35.63799, 145.57994))
+places.push(new google.maps.LatLng(-33.76724, 150.62182))
+places.push(new google.maps.LatLng(-34.65685, 150.29818))
+places.push(new google.maps.LatLng(-32.00763, 151.95826))
+places.push(new google.maps.LatLng(-31.25322, 146.92110))
+places.push(new google.maps.LatLng(-34.75483, 149.71865))
+places.push(new google.maps.LatLng(-33.86434, 151.02283))
+places.push(new google.maps.LatLng(-33.77277, 151.08135))
+var crimes = new Array(24)
+                 for(var i = 0; i <24;i++){
                     crimes[i] = new Array(4)
                 }
-crimes[0][0]="Three charged after police attacked during public order incident"
-crimes[0][1]="Moree, NSW, Australia"
-crimes[0][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzg3Lmh0bWwmYWxsPTE%3D"
-crimes[0][3]="Monday, 02 January 2012 03:39:35 PM"
-crimes[1][0]="Shots fired into parked car"
-crimes[1][1]="Ermington, NSW, Australia"
-crimes[1][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzg1Lmh0bWwmYWxsPTE%3D"
-crimes[1][3]="Monday, 02 January 2012 12:32:22 PM"
-crimes[2][0]="Woman charged after New Year's Eve glassing"
-crimes[2][1]="Inverell, NSW, Australia"
-crimes[2][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzgwLmh0bWwmYWxsPTE%3D"
-crimes[2][3]="Monday, 02 January 2012 10:24:51 AM"
-crimes[3][0]="Second man charged over attempted armed hotel robbery"
-crimes[3][1]="Camperdown, NSW, Australia"
-crimes[3][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzc4Lmh0bWwmYWxsPTE%3D"
-crimes[3][3]="Monday, 02 January 2012 08:06:18 AM"
-crimes[4][0]="Swimmer located"
-crimes[4][1]="Bondi Beach, NSW, Australia"
-crimes[4][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzc3Lmh0bWwmYWxsPTE%3D"
-crimes[4][3]="Monday, 02 January 2012 05:57:34 AM"
-crimes[5][0]="Swimmer reported missing in surf"
-crimes[5][1]="Bondi Beach, NSW, Australia"
-crimes[5][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzc0Lmh0bWwmYWxsPTE%3D"
-crimes[5][3]="Sunday, 01 January 2012 10:49:46 PM"
-crimes[6][0]="Police assaulted during arrest"
-crimes[6][1]="Warners Bay, NSW, Australia"
-crimes[6][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzY4Lmh0bWwmYWxsPTE%3D"
-crimes[6][3]="Sunday, 01 January 2012 12:01:25 PM"
-crimes[7][0]="Police helicopter targeted by laser"
-crimes[7][1]="Sydney Harbour, NSW, Australia"
-crimes[7][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzY3Lmh0bWwmYWxsPTE%3D"
-crimes[7][3]="Sunday, 01 January 2012 08:46:41 AM"
-crimes[8][0]="Police investigate vehicle fires"
-crimes[8][1]="Artarmon, NSW, Australia"
-crimes[8][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzY2Lmh0bWwmYWxsPTE%3D"
-crimes[8][3]="Sunday, 01 January 2012 04:39:20 AM"
-crimes[9][0]="Two men assaulted in brawl"
-crimes[9][1]="Byron Bay, NSW, Australia"
-crimes[9][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzY1Lmh0bWwmYWxsPTE%3D"
-crimes[9][3]="Sunday, 01 January 2012 02:52:44 AM"
-crimes[10][0]="Police appeal to locate owner of wedding ring"
-crimes[10][1]="Terrigal Beach, NSW, Australia"
-crimes[10][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzYwLmh0bWwmYWxsPTE%3D"
-crimes[10][3]="Saturday, 31 December 2011 02:03:18 PM"
-crimes[11][0]="Man seriously injured in assault"
-crimes[11][1]="Smiths Lake, NSW, Australia"
-crimes[11][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzU5Lmh0bWwmYWxsPTE%3D"
-crimes[11][3]="Saturday, 31 December 2011 01:22:17 PM"
-crimes[12][0]="Man arrested after attempted extortion"
-crimes[12][1]="Surry Hills, NSW, Australia"
-crimes[12][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzU4Lmh0bWwmYWxsPTE%3D"
-crimes[12][3]="Saturday, 31 December 2011 11:53:17 AM"
-crimes[13][0]="Police appeal for information after man shot"
-crimes[13][1]="Chester Hill, NSW, Australia"
-crimes[13][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzU2Lmh0bWwmYWxsPTE%3D"
-crimes[13][3]="Saturday, 31 December 2011 06:29:06 AM"
-crimes[14][0]="Police release CCTV following armed robbery"
-crimes[14][1]="Pyrmont, NSW, Australia"
-crimes[14][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzU1Lmh0bWwmYWxsPTE%3D"
-crimes[14][3]="Saturday, 31 December 2011 05:46:12 AM"
-crimes[15][0]="One man charged, another in hospital following attempted armed robbery"
-crimes[15][1]="Camperdown, NSW, Australia"
-crimes[15][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIwNzUzLmh0bWwmYWxsPTE%3D"
-crimes[15][3]="Friday, 30 December 2011 08:47:17 PM"
+crimes[0][0]="Officer hospitalised after alleged assault"
+crimes[0][1]="Maitland area, NSW, Australia"
+crimes[0][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTM1Lmh0bWwmYWxsPTE%3D"
+crimes[0][3]="Friday, 20 January 2012 03:35:00 PM"
+crimes[1][0]="Police officer charged"
+crimes[1][1]="Southern Region, NSW, Australia"
+crimes[1][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTMzLmh0bWwmYWxsPTE%3D"
+crimes[1][3]="Friday, 20 January 2012 01:35:13 PM"
+crimes[2][0]="Police appeal for information over carjacking"
+crimes[2][1]="Auburn, NSW, Australia"
+crimes[2][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTMwLmh0bWwmYWxsPTE%3D"
+crimes[2][3]="Friday, 20 January 2012 11:27:08 AM"
+crimes[3][0]="Missing man found"
+crimes[3][1]="Wauchope, NSW, Australia"
+crimes[3][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTI3Lmh0bWwmYWxsPTE%3D"
+crimes[3][3]="Friday, 20 January 2012 10:02:12 AM"
+crimes[4][0]="Children locked in car"
+crimes[4][1]="Griffith, NSW, Australia"
+crimes[4][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTI2Lmh0bWwmYWxsPTE%3D"
+crimes[4][3]="Friday, 20 January 2012 07:00:02 AM"
+crimes[5][0]="Man injured after falling onto train tracks"
+crimes[5][1]="Chester Hill, NSW, Australia"
+crimes[5][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTI1Lmh0bWwmYWxsPTE%3D"
+crimes[5][3]="Friday, 20 January 2012 06:29:54 AM"
+crimes[6][0]="Police arrests two men after seizing large amount of cannabis plants"
+crimes[6][1]="Tenterfield, NSW, Australia"
+crimes[6][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTI0Lmh0bWwmYWxsPTE%3D"
+crimes[6][3]="Friday, 20 January 2012 05:48:33 AM"
+crimes[7][0]="Man charged after weapons located during vehicle stop"
+crimes[7][1]="North Sydney, NSW, Australia"
+crimes[7][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTIzLmh0bWwmYWxsPTE%3D"
+crimes[7][3]="Friday, 20 January 2012 05:13:17 AM"
+crimes[8][0]="Police charge man with concealing serious offence"
+crimes[8][1]="Greenfield Park, NSW, Australia"
+crimes[8][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTIxLmh0bWwmYWxsPTE%3D"
+crimes[8][3]="Thursday, 19 January 2012 11:10:48 PM"
+crimes[9][0]="Man charged after women injured in collision"
+crimes[9][1]="Lidcombe, NSW, Australia"
+crimes[9][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTIwLmh0bWwmYWxsPTE%3D"
+crimes[9][3]="Thursday, 19 January 2012 10:57:36 PM"
+crimes[10][0]="Appeal to find missing man"
+crimes[10][1]="Wauchope, NSW, Australia"
+crimes[10][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTE5Lmh0bWwmYWxsPTE%3D"
+crimes[10][3]="Thursday, 19 January 2012 10:43:14 PM"
+crimes[11][0]="Police arrest man and woman after home invasion"
+crimes[11][1]="Finley, NSW, Australia"
+crimes[11][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTE3Lmh0bWwmYWxsPTE%3D"
+crimes[11][3]="Thursday, 19 January 2012 08:20:55 PM"
+crimes[12][0]="Five people saved in three search and rescue operations"
+crimes[12][1]="Blue Mountains, NSW, Australia"
+crimes[12][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTE2Lmh0bWwmYWxsPTE%3D"
+crimes[12][3]="Thursday, 19 January 2012 07:11:06 PM"
+crimes[13][0]="Police locate missing car owner after Greenfield Park shooting"
+crimes[13][1]="Operation Spartan, NSW, Australia"
+crimes[13][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTEyLmh0bWwmYWxsPTE%3D"
+crimes[13][3]="Thursday, 19 January 2012 06:27:01 PM"
+crimes[14][0]="Police appeal for information after property found on rocks"
+crimes[14][1]="Whale Rocks, NSW, Australia"
+crimes[14][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTExLmh0bWwmYWxsPTE%3D"
+crimes[14][3]="Thursday, 19 January 2012 04:49:44 PM"
+crimes[15][0]="Police assaulted, man charged"
+crimes[15][1]="Lethbridge Park, NSW, Australia"
+crimes[15][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTEwLmh0bWwmYWxsPTE%3D"
+crimes[15][3]="Thursday, 19 January 2012 04:15:56 PM"
+crimes[16][0]="Police release names and photographs of man and woman wanted for home invasion"
+crimes[16][1]="Finley, NSW, Australia"
+crimes[16][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTA5Lmh0bWwmYWxsPTE%3D"
+crimes[16][3]="Thursday, 19 January 2012 01:41:50 PM"
+crimes[17][0]="'PLAY SAFE, STAY SAFE': Man and woman rescued from bushland"
+crimes[17][1]="Glenbrook, NSW, Australia"
+crimes[17][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTA3Lmh0bWwmYWxsPTE%3D"
+crimes[17][3]="Thursday, 19 January 2012 01:29:42 PM"
+crimes[18][0]="Elderly man dies following crash"
+crimes[18][1]="Bundanoon, NSW, Australia"
+crimes[18][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTA1Lmh0bWwmYWxsPTE%3D"
+crimes[18][3]="Thursday, 19 January 2012 12:29:50 PM"
+crimes[19][0]="Man and woman arrested after elderly man assaulted"
+crimes[19][1]="Gloucester, NSW, Australia"
+crimes[19][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTA0Lmh0bWwmYWxsPTE%3D"
+crimes[19][3]="Thursday, 19 January 2012 12:26:37 PM"
+crimes[20][0]="Police concerned for the welfare of missing car owner after Greenfield Park shooting"
+crimes[20][1]="Operation Spartan, NSW, Australia"
+crimes[20][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMTAzLmh0bWwmYWxsPTE%3D"
+crimes[20][3]="Thursday, 19 January 2012 10:00:40 AM"
+crimes[21][0]="Teenager charged following stabbing"
+crimes[21][1]="Goulburn, NSW, Australia"
+crimes[21][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMDk5Lmh0bWwmYWxsPTE%3D"
+crimes[21][3]="Thursday, 19 January 2012 09:03:06 AM"
+crimes[22][0]="Man charged with murder following death of woman"
+crimes[22][1]="Auburn, NSW, Australia"
+crimes[22][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMDk2Lmh0bWwmYWxsPTE%3D"
+crimes[22][3]="Thursday, 19 January 2012 06:55:25 AM"
+crimes[23][0]="Police appeal for information after street robbery"
+crimes[23][1]="Epping, NSW, Australia"
+crimes[23][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIxMDk0Lmh0bWwmYWxsPTE%3D"
+crimes[23][3]="Thursday, 19 January 2012 04:58:38 AM"
 var infoWindow;
 
           for(var i = 0; i < places.length; i++){
@@ -120,7 +160,7 @@ var infoWindow;
                                   '<h4>'+ crimes[i][1] +'</h4>'+
                                   '<p>'+ crimes[i][0]+'</p>'+
                                   '<p><i>'+ crimes[i][3]+'</i></p>'+
-                                  '<p><a href='+crimes[i][2]+'>See more details</a></p>'+
+                                   '<p><a href='+crimes[i][2]+' target="_blank">See more details</a></p>'+
                                   '</div>';
                     infoWindow.setContent(content);
                     infoWindow.open(map, marker);

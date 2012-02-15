@@ -12,3 +12,15 @@ location: , Exception: No corresponding geographic location could be found for t
 location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
 location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
 location: Wollongong, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
+location: Sydney CBD, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Murwillumbah, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 3.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Sydney CBD, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Murwillumbah, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 3.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
