@@ -5,10 +5,12 @@ This module is not portable as time.tzset() is not supported at Windows Environm
 
 import os
 import time
-from time import strftime, localtime
+from time import strftime
+import sys
 
 def getTime():
 	os.environ['TZ'] = 'Australia/Sydney'
-	time.tzset()
+	if not sys.platform == "win32":
+		time.tzset()
 	return strftime("%Y-%m-%d %H:%M:%S")
 
