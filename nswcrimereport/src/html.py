@@ -20,17 +20,12 @@ FOOTER = '<body onload=\"initialize()\">\n\
 	    <br>Last updated: '+TIME+' (UTC/GMT+10 hours, EDT, Sydney/Australia)\n\
           </body></html>'
 
-
-
 def getHeader():
     return HEADER
-
 
 def getFooter():
     return FOOTER
 
-
 def makeHTML(header, body, footer):
     f = open("crimenews.html", "w")
     f.write(header+body+footer)
-  
