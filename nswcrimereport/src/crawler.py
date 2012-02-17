@@ -4,6 +4,7 @@ import urllib2
 from BeautifulSoup import BeautifulSoup
 from geopy import geocoders
 import time
+import re
 
 def HasDash(mystr):
   location = mystr.find('-')
@@ -84,10 +85,14 @@ def GenerateNewsList():
     date = info[2]
     strCrime, strLocation = AnalyzeTitle(info[1])
     latLng = GetLatLngList(strLocation)
-    
+     
     if strCrime and strLocation and len(latLng) > 0:
       news = []
-      news.append(strCrime)
+      if re.search('"', strCrime) or re.search("'", strCrime) :
+        strCrimeEscaped = re.escape(strCrime)
+        news.append(strCrimeEscaped)
+      else: 
+        news.append(strCrime)
       news.append(strLocation)
       news.append(weblink)      
       news.append(date)
