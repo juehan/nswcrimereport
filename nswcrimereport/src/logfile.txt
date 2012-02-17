@@ -24,3 +24,19 @@ location: Murwillumbah, NSW, Australia, Exception: Didn't find exactly one place
 location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
 location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
 location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Green Point, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: south-western Sydney, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 9.)
+location: Sydney CBD, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Green Point, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: south-western Sydney, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 9.)
+location: Sydney CBD, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
