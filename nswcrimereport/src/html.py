@@ -12,7 +12,7 @@ HEADER = '<!DOCTYPE html><html><head><title>NSW Crime Report</title>\n\
           </script>\n\
           <script type=\"text/javascript\">\n' 
 
-TIME = nswtime.getTime()
+TIME = nswtime.gettime()
 
 FOOTER = '<body onload=\"initialize()\">\n\
             <div id=\"map_canvas\" style=\"width:100%; height:100%\"></div>\n\
@@ -23,14 +23,14 @@ FOOTER = '<body onload=\"initialize()\">\n\
 
 
 def getHeader():
-  return HEADER
+    return HEADER
 
 
 def getFooter():
-  return FOOTER
+    return FOOTER
 
 
 def makeHTML(header, body, footer):
-  f = open("crimenews.html", "w")
-  f.write(header+body+footer)
+    f = open("crimenews.html", "w")
+    f.write(header+body+footer)
   
