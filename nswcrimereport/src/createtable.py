@@ -15,4 +15,4 @@ class CreateTable(object):
         Constructor
         '''
         
-    def 
+    

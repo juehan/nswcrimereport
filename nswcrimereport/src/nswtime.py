@@ -8,7 +8,8 @@ import time
 from time import strftime
 import sys
 
-def getTime():
+def gettime():
+	'''change timezone and get Australia/Sydney time'''
 	os.environ['TZ'] = 'Australia/Sydney'
 	if not sys.platform == "win32":
 		time.tzset()

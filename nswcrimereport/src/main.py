@@ -9,8 +9,8 @@ from crimegmaps import CrimeGMaps
 def main():
     crimeList = generate_news_list()
     for crime in crimeList:
-        for x in range(5):
-            print "crime[" + str(x) +"] : ", str(crime[x])
+        for idx in range(5):
+            print "crime[" + str(idx) +"] : ", str(crime[idx])
         print "----------------------------------------------------------"
     
     header = html.getHeader()
