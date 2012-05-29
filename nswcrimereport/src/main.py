@@ -1,5 +1,5 @@
 '''
-entry point
+entry point (to.johnny.lee@gmail.com)
 '''
 
 #!/usr/bin/eval PYTHONPATH=/home/nswcrime/modules python
