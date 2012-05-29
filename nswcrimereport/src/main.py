@@ -1,10 +1,13 @@
+'''
+entry point
+'''
+
 #!/usr/bin/eval PYTHONPATH=/home/nswcrime/modules python
 
 import sys
 import html
 from crawler import generate_news_list
 from crimegmaps import CrimeGMaps
-
 
 def main():
     crimeList = generate_news_list()
